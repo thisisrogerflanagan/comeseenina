@@ -489,8 +489,7 @@ table {
 ========================================================================== */
 html {
   font-size: 87.5%;
-  /* Set 1em = 14px */
-  -webkit-font-smoothing: antialiased; }
+  /* Set 1em = 14px */ }
 
 body {
   color: #6a7276;
@@ -502,7 +501,6 @@ h1 {
   color: #997add;
   font-family: 'billabongregular', sans-serif;
   font-size: 5em;
-  font-weight: normal;
   margin: 0;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
