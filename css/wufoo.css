@@ -73,3 +73,11 @@ textarea {
 #form2 #errorLi {
 	display: none;
 }
+
+#form2 li.error {
+	background-color: none !important;
+}
+
+.wufoo label.desc, .wufoo legend.desc {
+	font-size: 14px;
+}
