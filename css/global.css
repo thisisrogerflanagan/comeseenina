@@ -852,6 +852,7 @@ input[type="text"], input[type="email"], input[type="password"], textarea {
     display: block;
     margin-top: 3em;
     margin-left: 0;
+    min-height: 424px;
     width: 100%; }
     .contact-section .contact-info > .col:first-child {
       margin-top: 0; } }
