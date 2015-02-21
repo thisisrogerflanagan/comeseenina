@@ -14,6 +14,7 @@ textarea.textarea {
 	border: 1px solid #bfbfbf;
 	border-radius: 3px;
 	box-shadow: 0 1px 1px 0 #d9d9d9;
+	box-sizing: border-box;
 	display: block;
 	font-size: 18px;
 	outline: none !important;
@@ -75,7 +76,7 @@ textarea {
 }
 
 #form2 li.error {
-	background-color: none !important;
+	background-color: transparent !important;
 }
 
 .wufoo label.desc, .wufoo legend.desc {
