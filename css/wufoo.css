@@ -38,12 +38,12 @@ textarea {
 
 .stacked-form li:first-child {margin: 0;}
 
-.stacked-form .submit-button {
+.stacked-form .submit-button, .stacked-form #saveForm {
 	display: block;
 	width: 100%;
 }
 
-.submit-button {
+.submit-button, #saveForm {
 	background: #57b5d6;
 	border-radius: 3px;
 	color: #fff;
@@ -54,4 +54,4 @@ textarea {
 	transition: all 0.2s ease;
 }
 
-.submit-button:hover {background: #6bbedb;}
+.submit-button:hover, #saveForm:hover {background: #6bbedb;}
