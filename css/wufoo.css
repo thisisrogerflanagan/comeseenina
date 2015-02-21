@@ -42,3 +42,16 @@ textarea {
 	display: block;
 	width: 100%;
 }
+
+.submit-button {
+	background: #57b5d6;
+	border-radius: 3px;
+	color: #fff;
+	display: inline-block;
+	font-size: 30px;
+	padding: 8px 16px;
+	text-align: center;
+	transition: all 0.2s ease;
+}
+
+.submit-button:hover {background: #6bbedb;}
