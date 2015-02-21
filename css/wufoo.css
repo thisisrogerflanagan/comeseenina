@@ -1,8 +1,8 @@
 /* ==========================================================================
  Wufoo Contact Form Styles
 ========================================================================== */
-.wufoo .info h2 {
-	display: none;
+.wufoo .info {
+	display: none !important;
 }
 
 input[type="text"],
@@ -34,26 +34,42 @@ textarea {
 	min-height: 120px;
 }
 
+#form2 {padding: 0;}
+
 #form2 ul {margin: 0 0 1em;}
 
 #form2 li {margin: 1em 0 0;}
 
 #form2 li:first-child {margin: 0;}
 
-.stacked-form .submit-button, #form2 #saveForm {
+#form2 #saveForm {
 	display: block;
 	width: 100%;
 }
 
-.submit-button, #saveForm {
+#saveForm {
 	background: #57b5d6;
+	border: none;
 	border-radius: 3px;
 	color: #fff;
 	display: inline-block;
 	font-size: 22px;
-	padding: 8px 16px;
+	padding: 16px;
 	text-align: center;
 	transition: all 0.2s ease;
 }
 
-.submit-button:hover, #saveForm:hover {background: #6bbedb;}
+#saveForm:hover {background: #6bbedb;}
+
+.wufoo li.focused {
+	background: none;
+}
+
+#form2 li, #form2 li.buttons {
+	padding: 0;
+}
+
+/* Error Styles */
+#form2 #errorLi {
+	display: none;
+}
