@@ -8,7 +8,8 @@
 input[type="text"],
 input[type="email"],
 input[type="password"],
-textarea {
+textarea,
+textarea.textarea {
 	background: #fff;
 	border: 1px solid #bfbfbf;
 	border-radius: 3px;
@@ -16,7 +17,7 @@ textarea {
 	display: block;
 	font-size: 18px;
 	outline: none !important;
-	padding: .5em .75em;
+	padding: 12px;
 	transition: all .25s ease-in-out;
 	width: 100%;
 }
@@ -24,7 +25,8 @@ textarea {
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="password"]:focus, 
-textarea:focus {
+textarea:focus,
+textarea.textarea:focus {
 	border-color: #2781a0;
 }
 
@@ -32,13 +34,13 @@ textarea {
 	min-height: 120px;
 }
 
-.stacked-form ul {margin: 0 0 1em;}
+#form2 ul {margin: 0 0 1em;}
 
-.stacked-form li {margin: 1em 0 0;}
+#form2 li {margin: 1em 0 0;}
 
-.stacked-form li:first-child {margin: 0;}
+#form2 li:first-child {margin: 0;}
 
-.stacked-form .submit-button, .stacked-form #saveForm {
+.stacked-form .submit-button, #form2 #saveForm {
 	display: block;
 	width: 100%;
 }
@@ -48,7 +50,7 @@ textarea {
 	border-radius: 3px;
 	color: #fff;
 	display: inline-block;
-	font-size: 30px;
+	font-size: 22px;
 	padding: 8px 16px;
 	text-align: center;
 	transition: all 0.2s ease;
