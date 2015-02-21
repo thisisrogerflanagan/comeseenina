@@ -137,8 +137,8 @@
 											'async':true,
 											'host':'wufoo.com',
 											'header':'show',
-											'ssl':true};
-											s.src = ('http:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
+											'ssl':false};
+											s.src = ('http:' == d.location.protocol ? 'http://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
 											s.onload = s.onreadystatechange = function() {
 											var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
 											try { m1kl63nm0owl532 = new WufooForm();m1kl63nm0owl532.initialize(options);m1kl63nm0owl532.display(); } catch (e) {}};
