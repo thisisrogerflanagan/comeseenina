@@ -14,7 +14,7 @@
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-        <link href='http://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/global.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
@@ -33,11 +33,99 @@
 			        </div>
 			        <div class="action-bar">
 								<div class="info-section hours">
-									<i class="icon ion-clock"></i>
+									<i class="icon ion-calendar"></i>
+									<!-- TODO: Look up how to dynamically update this with the proper date -->
+									<h5>Friday, Mar 21</h5>
+									<a class="tooltip-link scheudle-link" href="#">9:00 AM - 5:00 PM</a>
+									<div class="tooltip schedule-tooltip" style="display: none;">
+										<div class="tooltip-header">
+											<h6>Schedule</h6>
+										</div>
+										<div class="tooltip-body">
+											<ul class="schedule-list">
+												<li>
+													<div class="time-wrap">
+														<span class="time">Off</span>
+														<span class="day">Monday</span>
+													</div>
+												</li>
+												<li>
+													<div class="time-wrap">
+														<span class="time">9:00 AM - 5:00 PM</span>
+														<span class="day">Tuesday</span>
+													</div>
+												</li>
+												<li>
+													<div class="time-wrap">
+														<span class="time">Off</span>
+														<span class="day">Wednesday</span>
+													</div>
+												</li>
+												<li>
+													<div class="time-wrap">
+														<span class="time">9:00 AM - 5:00 PM</span>
+														<span class="day">Thursday</span>
+													</div>
+												</li>
+												<li>
+													<div class="time-wrap">
+														<span class="time">9:00 AM - 5:00 PM</span>
+														<span class="day">Friday</span>
+													</div>
+												</li>
+												<li>
+													<div class="time-wrap">
+														<span class="time">9:00 AM - 5:00 PM</span>
+														<span class="day">Saturday</span>
+													<div class="time-wrap">
+												</li>
+												<li>
+													<div class="time-wrap">
+														<span class="time">Off</span>
+														<span class="day">Sunday</span>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
 								</div>
-								<div class="profile-section"></div>
+								<div class="profile-section">
+									<div class="profile-photo">
+										<span class="nina-pic"></span>
+									</div>
+									<div class="button-container">
+										<!-- TODO: Look into adding an icon to this button -->
+										<a class="button book-button" href="#">
+											Book Online
+											<span class="button-icon">
+												<i class="icon ion-ios-bookmarks"></i>
+											</span>	
+										</a>
+									</div>
+									<div class="scroll-indicator">
+										<i class="icon ion-chevron-down"></i>
+									</div>
+								</div>
 								<div class="info-section location">
 									<i class="icon ion-map"></i>
+									<h5>Headlines Salon</h5>
+									<a class="tooltip-link location-link" href="#">993 Laurel St</a>
+									<div class="tooltip schedule-tooltip" style="display: none;">
+										<div class="tooltip-header">
+											<h6>Directions</h6>
+										</div>
+										<div class="tooltip-body">
+											<ul class="address-list">
+												<li>Headlines Salon</li>
+												<li>993 Laurel St</li>
+												<li>San Carlos, CA 94070</li>
+												<li>(650) 593-7564</li>
+												<li>
+													<a class="button directions-button" href="#">Get Directions</a>
+												</li>
+											</ul>
+										</div>
+									</div>
 								</div>
 			        </div>
 		        </div>

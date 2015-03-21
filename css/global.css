@@ -2356,29 +2356,9 @@ a:hover {
  * Address font sizes within `section` and `article` in Firefox 4+, Safari 5,
  * and Chrome.
  */
-h1 {
-  font-size: 2em;
-  margin: 0 0 0.67em; }
-
-h2 {
-  font-size: 1.5em;
-  margin: 0 0 0.83em; }
-
-h3 {
-  font-size: 1.17em;
-  margin: 0 0 1em; }
-
-h4 {
-  font-size: 1em;
-  margin: 0 0 1.33em; }
-
-h5 {
-  font-size: 0.83em;
-  margin: 0 0 1.67em; }
-
-h6 {
-  font-size: 0.67em;
-  margin: 0 0 2.33em; }
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  margin: 0; }
 
 /**
  * Address styling not present in IE 7/8/9, Safari 5, and Chrome.
@@ -2725,26 +2705,21 @@ body {
   -webkit-font-smoothing: antialiased; }
 
 h1 {
-  color: #997add;
+  color: #fff;
   font-family: 'billabongregular';
-  font-size: 55px;
+  font-size: 65px;
   font-weight: 100;
-  height: 48px;
-  margin: 0; }
+  height: 55px;
+  margin: 0 0 15px;
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5); }
 
 h2 {
-  color: #333;
-  font-size: 18px;
-  margin-bottom: 25px;
+  color: #6bbedb;
+  font-size: 24px;
+  font-weight: 300;
+  margin: 0;
   text-align: center;
   text-transform: uppercase; }
-  h2:after {
-    background: #333;
-    content: '';
-    display: block;
-    height: 1px;
-    margin: 10px auto 0;
-    width: 10%; }
 
 h3 {
   font-size: 24px; }
@@ -2757,8 +2732,8 @@ h4 {
 
 h5 {
   color: #97dbed;
-  font-size: 22px;
-  margin-bottom: 36px; }
+  font-size: 26px;
+  margin-bottom: 8px; }
 
 h6 {
   color: #999;
@@ -2783,13 +2758,53 @@ p, ul {
  Buttons
 ========================================================================== */
 .button {
-  border-radius: 3px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 2px 2px 4px;
   color: #fff;
   display: inline-block;
-  font-size: 1.5em;
-  padding: .5em .75em;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  padding: 8px 22px;
   text-align: center;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease;
+  vertical-align: middle; }
+
+.button-icon {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 0 5px 5px 0;
+  bottom: 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 54px; }
+  .button-icon .icon {
+    font-size: 28px;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%; }
+
+.book-button {
+  background: #5bb7f6;
+  padding: 14px 92px 14px 36px;
+  position: relative; }
+
+/* ==========================================================================
+ Tooltips
+========================================================================== */
+.tooltip-link {
+  border-bottom: 1px solid #bbb;
+  color: #bbb;
+  display: inline-block;
+  font-size: 16px;
+  padding-bottom: 2px;
   transition: all 0.2s ease; }
+  .tooltip-link:hover {
+    border-color: #ff0a7d; }
 
 /* ==========================================================================
  Toolbox
@@ -2810,6 +2825,7 @@ p, ul {
   margin-left: auto;
   margin-right: auto;
   max-width: 960px;
+  position: relative;
   width: 100%; }
 
 /* ==========================================================================
@@ -2822,6 +2838,8 @@ p, ul {
  Header
 ========================================================================== */
 .header {
+  display: table;
+  height: 100%;
   position: relative; }
   .header:after {
     background: -webkit-radial-gradient(50% 50%, ellipse closest-corner, rgba(64, 64, 64, 0.49) 1%, black 100%);
@@ -2834,8 +2852,77 @@ p, ul {
     left: 0;
     position: absolute;
     right: 0;
-    top: 0; }
+    top: 0;
+    z-index: 0; }
+  .header .container {
+    display: table-cell;
+    height: 100%;
+    vertical-align: middle;
+    z-index: 1; }
 
+.logo-container {
+  margin-top: -150px;
+  text-align: center; }
+
+.action-bar {
+  background: rgba(0, 0, 0, 0.45);
+  bottom: 0;
+  font-family: 'Open Sans', sans-serif;
+  left: 0;
+  position: absolute;
+  right: 0; }
+
+.info-section {
+  padding: 20px;
+  text-align: center; }
+  .info-section .icon {
+    color: #fff;
+    display: inline-block;
+    font-size: 50px;
+    margin-bottom: 10px; }
+
+.profile-section {
+  text-align: center; }
+
+.profile-photo {
+  border: 4px solid #fff;
+  border-radius: 50%;
+  margin: 0 auto;
+  width: 200px; }
+
+.nina-pic {
+  background: url("../img/nina.jpg") no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border-radius: 50%;
+  display: block;
+  height: 200px;
+  max-width: 100%;
+  width: 200px; }
+
+/* ==========================================================================
+ Breakpoints
+========================================================================== */
+@media (min-width: 800px) {
+  .action-bar {
+    display: block;
+    font-size: 0;
+    width: 100%; }
+    .action-bar > div {
+      display: inline-block;
+      text-align: center;
+      vertical-align: middle; }
+
+  .info-section {
+    width: 25%; }
+
+  .profile-section {
+    margin-top: -100px;
+    padding: 0 20px 40px 20px;
+    width: 50%; }
+
+  .profile-photo {
+    margin-bottom: 40px; } }
 /* ==========================================================================
  Testimonials
 ========================================================================== */
