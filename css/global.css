@@ -2736,10 +2736,10 @@ h5 {
   margin-bottom: 8px; }
 
 h6 {
-  color: #999;
-  font-size: 12px;
-  margin-bottom: 18px;
-  text-transform: uppercase; }
+  color: #333;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 0; }
 
 p, ul {
   color: #999;
@@ -2766,7 +2766,8 @@ p, ul {
   font-family: 'Open Sans', sans-serif;
   font-size: 22px;
   font-weight: 600;
-  padding: 8px 22px;
+  padding: 14px 92px 14px 36px;
+  position: relative;
   text-align: center;
   text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.05);
   transition: all 0.2s ease;
@@ -2786,12 +2787,21 @@ p, ul {
     left: 50%;
     position: absolute;
     transform: translate(-50%, -50%);
+    transition: all 0.2s ease;
     top: 50%; }
 
 .book-button {
-  background: #5bb7f6;
-  padding: 14px 92px 14px 36px;
-  position: relative; }
+  background: #5bb7f6; }
+  .book-button:hover .icon {
+    color: #5bb7f6; }
+
+.directions-button {
+  background: #9980DE;
+  font-size: 16px;
+  padding: 14px 74px 14px 20px;
+  width: 100%; }
+  .directions-button:hover .icon {
+    color: #9980de; }
 
 /* ==========================================================================
  Tooltips
@@ -2805,6 +2815,29 @@ p, ul {
   transition: all 0.2s ease; }
   .tooltip-link:hover {
     border-color: #ff0a7d; }
+
+.tooltip {
+  background: #fff;
+  border-radius: 5px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: -100%; }
+
+.schedule-tooltip {
+  top: -130%; }
+  .schedule-tooltip .tooltip-body {
+    padding-bottom: 0;
+    padding-top: 0; }
+
+.tooltip-header {
+  background: #EBEBEB;
+  border-radius: 5px 5px 0 0;
+  padding: 10px; }
+
+.tooltip-body {
+  border-radius: 0 0 5px 5px;
+  padding: 10px; }
 
 /* ==========================================================================
  Toolbox
@@ -2869,13 +2902,16 @@ p, ul {
   bottom: 0;
   font-family: 'Open Sans', sans-serif;
   left: 0;
+  padding: 10px;
   position: absolute;
   right: 0; }
+  .action-bar > div {
+    position: relative; }
 
 .info-section {
-  padding: 20px;
+  padding: 10px;
   text-align: center; }
-  .info-section .icon {
+  .info-section > .icon {
     color: #fff;
     display: inline-block;
     font-size: 50px;
@@ -2899,6 +2935,45 @@ p, ul {
   height: 200px;
   max-width: 100%;
   width: 200px; }
+
+.schedule-list {
+  text-align: left; }
+  .schedule-list > li {
+    border-top: 1px solid #ebebeb; }
+    .schedule-list > li:first-child {
+      border: none; }
+
+.time-wrap {
+  display: table;
+  padding: 10px;
+  width: 100%; }
+
+.time, .day {
+  display: table-cell; }
+
+.time {
+  color: #999;
+  float: right;
+  font-size: 14px;
+  text-align: left;
+  width: 118px; }
+
+.day {
+  color: #666;
+  float: left;
+  font-size: 12px; }
+
+.address-list {
+  color: #666;
+  font-size: 14px;
+  text-align: left; }
+  .address-list > li {
+    margin-top: 6px; }
+    .address-list > li:first-child {
+      margin-top: 0; }
+
+.phone {
+  margin-bottom: 20px; }
 
 /* ==========================================================================
  Breakpoints
