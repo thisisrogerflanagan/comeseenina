@@ -1,0 +1,18 @@
+/* ==========================================================================
+ Testimonials
+========================================================================== */
+.testimonials {
+  display: table;
+  width: 100%; }
+
+.quote, .cite {
+  display: table-cell; }
+
+.quote {
+  width: 75%; }
+  .quote p {
+    font-style: italic; }
+
+.cite {
+  background: #97dbed;
+  width: 25%; }
