@@ -1,1 +1,1 @@
-$(document).ready(function(){});
+$(window).load(function(){$(".js-open-nav").click(function(){$(".nav").addClass("show-nav"),$(".nav").removeClass("hide-nav")}),$(".js-close-nav").click(function(){$(".nav").addClass("hide-nav"),$(".nav").removeClass("show-nav")})});
